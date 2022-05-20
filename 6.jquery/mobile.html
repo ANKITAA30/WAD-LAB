@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Basic mobile app</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js"></script>
+</head>
+
+<body>
+    <div data-role="page" id="index">
+        <header data-role="header">
+            <a href="index.html" data-icon="gear" data-theme="b" class="ui-btn-right">Settings</a>
+            <h1>October 2011 Shots</h1>
+        </header>
+
+        <div data-role="content">
+            <ul data-role="listview" data-theme="c">
+                <li><a href="https://images.unsplash.com/photo-1652120271748-6f2d0736f735?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">First image</a></li>
+                <li><a href="https://images.unsplash.com/photo-1652041436328-a7305368d29a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">Second image</a></li>
+                <li><a href="https://images.unsplash.com/photo-1652125015971-f1a90d7cb093?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzOHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">Third image</a></li>
+                <li><a href="https://images.unsplash.com/photo-1652105940399-8c7a77990ec1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1MXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">Fourth image</a></li>
+            </ul>
+        </div>
+
+        <footer data-role="footer">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#index" data-direction="reverse">App Homescreen!</a></li>
+                    <li><a href="http://www.google.com/" data-rel="nofollow">Google Me</a></li>
+                    <li><a href="https://www.hongkiat.com/" data-rel="nofollow">Hongkiat Blog</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <div data-role="page" id="about">
+        <header data-role="header">
+            <h1>Page 2 Here</h1>
+        </header>
+
+        <div data-role="content">
+            <p>just some extra content as well.</p>
+            <p>I mean, you can <a data-rel="back" href="#index">go back</a> at any time.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

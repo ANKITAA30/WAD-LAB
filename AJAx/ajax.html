@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        h2 {
+            color: blue;
+            margin-top: 150px;
+            margin-left: 700px;
+            font-size:50px;
+        }
+
+        button {
+            margin-top: 150px;
+            margin-left: 700px;
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        body {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="demo">
+        <h2>Take me to Virtual World</h2>
+        <button type="button" onclick="loadDoc()">Change Content</button>
+    </div>
+
+    <script>
+        function loadDoc() {
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function () {
+                document.getElementById("demo").innerHTML =
+                    this.responseText;
+            }
+            xhttp.open("GET", "ajax_info.html");
+            xhttp.send();
+        }
+    </script>
+
+</body>
+
+</html>
